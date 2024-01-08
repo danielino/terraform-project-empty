@@ -10,8 +10,6 @@ terraform {
 
 resource "null_resource" "cluster" {
   provisioner "local-exec" {
-    command = [
-      "uptime"
-    ]
+    command = "uptime"
   }
 }
